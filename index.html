@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel Watches</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+            integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+            crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+        $(window).on('scroll', function() {
+        if($(window).scrollTop()) {
+            $('header').addClass('black');
+        }
+        else{
+            $('header').removeClass('black');
+        }
+    });
+    </script>
+</head>
+<body>
+    <section>
+        <header class="">
+            <a href="#" class="logo"><img src="./img/brand.gif" width="70px" height="70px"></a>
+            <a class="toggle">Menu</a>
+            <ul class="">
+                <li>
+                    <a href="#">Features</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </header>
+    </section>
+    <div class="container">
+        <section id="features">
+            <div class="grid">
+                <div class="icon">
+                    <i class="fas fa-3x fa-thumbs-up"></i>
+                </div>
+                <div class="desc">
+                    <h3>PREMIUM MATERIAL</h2>
+                    <p>
+                        A classic premium quality design rethought with a focus on 
+                        outright accuracy and new technology.       
+                    </p>
+                </div>
+            </div>
+            <div class="grid">
+             <div class="icon"><i class="fas fa-3x fa-star"></i>
+
+             </div>
+             <div class="desc">
+                 <h3>QUALITY ASSURANCE</h2>
+                 <p>
+                     Be assured that the desired level of quality is maintained by 
+                     giving attention to every stage of production and delivery. 
+                 </p>
+             </div>
+         </div>
+         <div class="grid">
+             <div class="icon"><i class="fas fa-3x fa-shipping-fast"></i>
+             </div>
+             <div class="desc">
+                 <h3>FAST SHIPPING</h2>
+                 <p>
+                     The fast paced journey from clicking the order button to 
+                     having the premium watch on your wrist is what keeps our customer
+                     satisfaction so high.
+                 </p>
+             </div>
+         </div>
+        </section>
+        
+    </div>
+</body>
+</html>
