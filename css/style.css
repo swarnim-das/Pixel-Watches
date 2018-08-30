@@ -7,7 +7,6 @@ body{
 section{
     position: relative;
     width: 100%;
-    height: 50vh;
     background: url(../img/22010382001002-30-large.jpg);
     background-position: center center;
     background-size: 1300px;  
@@ -15,6 +14,10 @@ section{
 
 section#features{
     background: #fff;
+}
+
+section.header-hero{
+  height: 60vh;
 }
 
 header{
