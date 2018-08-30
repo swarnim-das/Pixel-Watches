@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pixel Watches</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-            integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
-            crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Pixel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.toggle').click(function(){
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
                 $('ul').toggleClass('active');
             })
         })
-        $(window).on('scroll', function() {
-        if($(window).scrollTop()) {
-            $('header').addClass('black');
-        }
-        else{
-            $('header').removeClass('black');
-        }
-    });
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('header').addClass('black');
+            } else {
+                $('header').removeClass('black');
+            }
+        });
     </script>
 </head>
+
 <body>
-    <section class="main-section">
+    <section>
         <header class="">
-            <a href="#" class="logo"><img src="./img/brand.gif" alt="Brand Logo" width="70px" height="70px"></a>
+            <a href="#" class="logo"><img src="./img/brand.gif" width="70px" height="70px"></a>
             <a class="toggle">Menu</a>
             <ul class="">
                 <li>
@@ -44,47 +43,67 @@
                 </li>
             </ul>
         </header>
+
     </section>
     <div class="container">
-        <section id="features">
-            <div class="grid">
-                <div class="icon">
-                    <i class="fas fa-3x fa-thumbs-up"></i>
-                </div>
-                <div class="desc">
-                    <h3>PREMIUM MATERIAL</h3>
-                    <p>
-                        A classic premium quality design rethought with a focus on 
-                        outright accuracy and new technology.       
-                    </p>
+        <div class="features">
+
+            <div class="feature">
+                <i class="fa fa-bar-chart icon"></i>
+                <div class="feature-content">
+                    <h3>Premium Material</h3>
+                    <p>A classic premium quality design rethought with a focus on
+                        outright accuracy and new technology.</p>
                 </div>
             </div>
-            <div class="grid">
-             <div class="icon"><i class="fas fa-3x fa-star"></i>
 
-             </div>
-             <div class="desc">
-                 <h3>QUALITY ASSURANCE</h3>
-                 <p>
-                     Be assured that the desired level of quality is maintained by 
-                     giving attention to every stage of production and delivery. 
-                 </p>
-             </div>
-         </div>
-         <div class="grid">
-             <div class="icon"><i class="fas fa-3x fa-shipping-fast"></i>
-             </div>
-             <div class="desc">
-                 <h3>FAST SHIPPING</h3>
-                 <p>
-                     The fast paced journey from clicking the order button to 
-                     having the premium watch on your wrist is what keeps our customer
-                     satisfaction so high.
-                 </p>
-             </div>
-         </div>
-        </section>
-        
+            <div class="feature">
+                <i class="fa fa-thumbs-up  icon"></i>
+                <div class="feature-content">
+                    <h3>QUALITY ASSURANCE</h3>
+                    <p>The desired level of quality is maintained by
+                        giving attention to every stage of production and delivery. </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa fa-gear icon"></i>
+                <div class="feature-content">
+                    <h3>FAST SHIPPING</h3>
+                    <p>The fast paced journey from clicking the order button to
+                        having the premium watch on your wrist is what keeps our customer
+                        satisfaction so high.</p>
+                </div>
+            </div>
+
+        </div>
+        <section class="letter">
+            <div class="control">
+              <h3>Subscribe for our newsletter</h3>
+              <span>Be Updated</span>
+              <input type="email" placeholder="Your Email" class="input">
+              <input type="submit" value="Subscribe" class="btn">
+            </div>
+          </section>
+      
+          <section class="contact-wrapper">
+            <div class="contact">
+              <i class="fa fa-map-marker"></i>
+              <p>Classic Homes, Bangalore</p>
+            </div>
+      
+            <div class="contact">
+              <i class="fa fa-globe"></i>
+              <p>xyz@pixel.com</p>
+            </div>
+      
+            <div class="contact">
+              <i class="fa fa-phone"></i>
+              <p>0123456789</p>
+            </div>
+          </section>
+      
     </div>
 </body>
+
 </html>
